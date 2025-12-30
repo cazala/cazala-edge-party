@@ -6,7 +6,7 @@ This repo deploys a **route-scoped Cloudflare Worker** that serves the Party pla
 
 It does this by **reverse-proxying** to the upstream origin:
 
-- **`https://party-assets.caza.la`**
+- **`https://party.caza.la`**
 
 The browser URL stays on **`caza.la/party...`** (no redirects to `*.pages.dev`, `party.caza.la`, or the upstream domain).
 
@@ -33,7 +33,7 @@ Configured in `wrangler.toml`:
 
 - **Worker name**: `cazala-edge-party`
 - **Route**: `caza.la/party*`
-- **Upstream**: `vars.UPSTREAM_ORIGIN` (default: `https://party-assets.caza.la`)
+- **Upstream**: `vars.UPSTREAM_ORIGIN` (default: `https://party.caza.la`)
 
 ### Scripts
 
@@ -72,7 +72,7 @@ Assuming the Worker is deployed and the route is active:
   - refresh → still loads (no 404)
 - Static assets load from **`/party/assets/...`** (verify in DevTools Network)
 - `https://caza.la/` and other paths continue to work (not served by this Worker)
-- No redirects to `party-assets.caza.la`, `party.caza.la`, or any `*.pages.dev` URL
+- No redirects to `party.caza.la`, `party.caza.la`, or any `*.pages.dev` URL
 
 
 

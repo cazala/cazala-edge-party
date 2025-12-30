@@ -7,6 +7,6 @@ routes = [
 ]
 
 [vars]
-UPSTREAM_ORIGIN = "https://party-assets.caza.la"
+UPSTREAM_ORIGIN = "https://party.caza.la"
 
 
