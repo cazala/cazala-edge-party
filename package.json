@@ -1,0 +1,17 @@
+{
+  "name": "cazala-edge-party",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251219.0",
+    "typescript": "^5.8.2",
+    "wrangler": "^4.28.0"
+  }
+}
+
+
